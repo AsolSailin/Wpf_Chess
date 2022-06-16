@@ -2,7 +2,7 @@
 
 using System;
 
-namespace LibraryChess
+namespace Chess
 {
     class Rook : Piece
     {
