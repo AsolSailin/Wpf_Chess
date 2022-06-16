@@ -5,8 +5,106 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chess_Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="750">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition x:Name="Colomn"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderThickness="20" BorderBrush="{StaticResource BorderColor}" Grid.RowSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="0" Grid.Column="1" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="0" Grid.Column="2" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="0" Grid.Column="3" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="0" Grid.Column="4" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="0" Grid.Column="5" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="0" Grid.Column="6" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="0" Grid.Column="7" Content="" Background="{StaticResource BlackTile}" />
 
+                <Button Grid.Row="1" Grid.Column="0" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="1" Grid.Column="1" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="1" Grid.Column="2" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="1" Grid.Column="3" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="1" Grid.Column="4" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="1" Grid.Column="5" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="1" Grid.Column="6" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="1" Grid.Column="7" Content="" Background="{StaticResource WhiteTile}" />
+
+                <Button Grid.Row="2" Grid.Column="0" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="2" Grid.Column="1" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="2" Grid.Column="2" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="2" Grid.Column="3" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="2" Grid.Column="4" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="2" Grid.Column="5" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="2" Grid.Column="6" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="2" Grid.Column="7" Content="" Background="{StaticResource BlackTile}" />
+
+                <Button Grid.Row="3" Grid.Column="0" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="3" Grid.Column="1" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="3" Grid.Column="2" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="3" Grid.Column="3" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="3" Grid.Column="4" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="3" Grid.Column="5" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="3" Grid.Column="6" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="3" Grid.Column="7" Content="" Background="{StaticResource WhiteTile}" />
+
+                <Button Grid.Row="4" Grid.Column="0" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="4" Grid.Column="1" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="4" Grid.Column="2" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="4" Grid.Column="3" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="4" Grid.Column="4" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="4" Grid.Column="5" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="4" Grid.Column="6" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="4" Grid.Column="7" Content="" Background="{StaticResource BlackTile}" />
+
+                <Button Grid.Row="5" Grid.Column="0" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="5" Grid.Column="1" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="5" Grid.Column="2" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="5" Grid.Column="3" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="5" Grid.Column="4" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="5" Grid.Column="5" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="5" Grid.Column="6" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="5" Grid.Column="7" Content="" Background="{StaticResource WhiteTile}" />
+
+                <Button Grid.Row="6" Grid.Column="0" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="6" Grid.Column="1" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="6" Grid.Column="2" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="6" Grid.Column="3" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="6" Grid.Column="4" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="6" Grid.Column="5" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="6" Grid.Column="6" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="6" Grid.Column="7" Content="" Background="{StaticResource BlackTile}" />
+
+                <Button Grid.Row="7" Grid.Column="0" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="7" Grid.Column="1" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="7" Grid.Column="2" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="7" Grid.Column="3" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="7" Grid.Column="4" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="7" Grid.Column="5" Content="" Background="{StaticResource WhiteTile}" />
+                <Button Grid.Row="7" Grid.Column="6" Content="" Background="{StaticResource BlackTile}" />
+                <Button Grid.Row="7" Grid.Column="7" Content="" Background="{StaticResource WhiteTile}" />
+            </Grid>
+        </Border>
     </Grid>
 </Window>

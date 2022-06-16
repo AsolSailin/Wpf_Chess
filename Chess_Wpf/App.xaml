@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:Chess_Wpf"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="BorderColor" Color="#606e8c"/>
+            <SolidColorBrush x:Key="WhiteTile" Color="White"/>
+            <SolidColorBrush x:Key="BlackTile" Color="Black"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
