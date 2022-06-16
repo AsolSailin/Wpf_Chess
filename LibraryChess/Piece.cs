@@ -3,7 +3,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace Chess
+namespace LibraryChess
 {
     public abstract class Piece
     {

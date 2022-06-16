@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Chess
+namespace LibraryChess
 {
     public enum ChessPieces
     {

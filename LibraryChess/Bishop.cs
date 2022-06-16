@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Chess
+namespace LibraryChess
 {
     class Bishop : Piece
     {

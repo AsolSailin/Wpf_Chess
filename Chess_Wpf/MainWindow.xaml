@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chess_Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="750">
+        Title="MainWindow" Height="500" Width="750" Background="#d8bfd8">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500"/>
@@ -106,5 +106,14 @@
                 <Button Grid.Row="7" Grid.Column="7" Content="" Background="{StaticResource WhiteTile}" />
             </Grid>
         </Border>
+        <ListBox Name="phonesList" Margin="31,90,31,226" Grid.Column="1" >
+            <TextBlock FontWeight="Bold" TextDecorations="Underline" Text="Choosing a chess piece" />
+            <ListBoxItem Background="LightGray">King</ListBoxItem>
+            <ListBoxItem Background="LightGray">Queen</ListBoxItem>
+            <ListBoxItem Background="LightGray">Knight</ListBoxItem>
+            <ListBoxItem Background="LightGray">Bishop</ListBoxItem>
+            <ListBoxItem Background="LightGray">Bishop</ListBoxItem>
+            <ListBoxItem Background="LightGray">Pawn</ListBoxItem>
+        </ListBox>
     </Grid>
 </Window>
