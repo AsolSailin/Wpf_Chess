@@ -21,9 +21,63 @@ namespace Chess_Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Piece piece;
+        private string choice;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            int x = Grid.GetColumn(sender as Button);
+            int y = Grid.GetRow(sender as Button);
+
+            try
+            {
+                piece = PieceMaker.Make(choice, x, y);
+                (sender as Button).Background = new SolidColorBrush(Color.FromRgb(216, 191, 216));
+                (sender as Button).Content = choice;
+            }
+            catch
+            {
+            }
+        }
+
+        private void ButtonKing_Click(object sender, RoutedEventArgs e)
+        {
+            choice = "King";
+        }
+
+        private void ButtonQueen_Click(object sender, RoutedEventArgs e)
+        {
+            choice = "Queen";
+        }
+
+        private void ButtonRook_Click(object sender, RoutedEventArgs e)
+        {
+            choice = "Rook";
+        }
+
+        private void ButtonKnight_Click(object sender, RoutedEventArgs e)
+        {
+            choice = "Knight";
+        }
+
+        private void ButtonBishop_Click(object sender, RoutedEventArgs e)
+        {
+            choice = "Bishop";
+        }
+
+        private void ButtonPawn_Click(object sender, RoutedEventArgs e)
+        {
+            choice = "Pawn";
+        }
+
+        private void btn_MouseEnter(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
