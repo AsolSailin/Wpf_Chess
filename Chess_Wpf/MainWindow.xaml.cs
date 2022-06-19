@@ -75,9 +75,27 @@ namespace Chess_Wpf
             choice = "Pawn";
         }
 
-        private void btn_MouseEnter(object sender, MouseEventArgs e)
+        private void ButtonClear_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void GotFocus(object sender, RoutedEventArgs e)
+        {
+            Button tb = e.Source as Button;
+            tb.Background = Brushes.Thistle;
+        }
+
+        private void WhiteLostFocus(object sender, RoutedEventArgs e)
+        {
+            Button tb = e.Source as Button;
+            tb.Background = Brushes.White;
+        }
+
+        private void BlackLostFocus(object sender, RoutedEventArgs e)
+        {
+            Button tb = e.Source as Button;
+            tb.Background = Brushes.Black;
         }
     }
 }
