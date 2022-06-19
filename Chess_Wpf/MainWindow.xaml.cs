@@ -45,34 +45,10 @@ namespace Chess_Wpf
             }
         }
 
-        private void ButtonKing_Click(object sender, RoutedEventArgs e)
+        private void Piece_Click(object sender, RoutedEventArgs e)
         {
-            choice = "King";
-        }
-
-        private void ButtonQueen_Click(object sender, RoutedEventArgs e)
-        {
-            choice = "Queen";
-        }
-
-        private void ButtonRook_Click(object sender, RoutedEventArgs e)
-        {
-            choice = "Rook";
-        }
-
-        private void ButtonKnight_Click(object sender, RoutedEventArgs e)
-        {
-            choice = "Knight";
-        }
-
-        private void ButtonBishop_Click(object sender, RoutedEventArgs e)
-        {
-            choice = "Bishop";
-        }
-
-        private void ButtonPawn_Click(object sender, RoutedEventArgs e)
-        {
-            choice = "Pawn";
+            var b = sender as Button;
+            choice = b.Content.ToString();
         }
 
         private void ButtonClear_Click(object sender, RoutedEventArgs e)

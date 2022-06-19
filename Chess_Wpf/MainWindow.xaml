@@ -107,12 +107,12 @@
             </Grid>
         </Border>
 
-        <Button Content="King" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Click="ButtonKing_Click"/>
-        <Button Content="Queen" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Click="ButtonQueen_Click"/>
-        <Button Content="Rook" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Click="ButtonRook_Click"/>
-        <Button Content="Knight" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,141,0,0" VerticalAlignment="Top" Click="ButtonKnight_Click"/>
-        <Button Content="Bishop" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Click="ButtonBishop_Click"/>
-        <Button Content="Pawn" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Click="ButtonPawn_Click"/>
+        <Button Content="King" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Click="Piece_Click"/>
+        <Button Content="Queen" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Click="Piece_Click"/>
+        <Button Content="Rook" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Click="Piece_Click"/>
+        <Button Content="Knight" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,141,0,0" VerticalAlignment="Top" Click="Piece_Click"/>
+        <Button Content="Bishop" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Click="Piece_Click"/>
+        <Button Content="Pawn" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Click="Piece_Click"/>
 
         <Button Content="Clear" Width="50" Grid.Column="1" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.89,0.453" Click="ButtonClear_Click"/>
     </Grid>
