@@ -77,7 +77,13 @@ namespace Chess_Wpf
 
         private void ButtonClear_Click(object sender, RoutedEventArgs e)
         {
+            int x = Grid.GetColumn(sender as Button);
+            int y = Grid.GetRow(sender as Button);
 
+            foreach (Button cell in Board.Children)
+            {
+                cell.Content = " ";
+            }
         }
 
         private void GotFocus(object sender, RoutedEventArgs e)
