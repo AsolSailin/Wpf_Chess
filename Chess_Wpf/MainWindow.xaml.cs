@@ -23,6 +23,7 @@ namespace Chess_Wpf
     {
         private Piece piece;
         private string choice;
+        private Button motion;
 
         public MainWindow()
         {
@@ -34,14 +35,17 @@ namespace Chess_Wpf
             int x = Grid.GetColumn(sender as Button);
             int y = Grid.GetRow(sender as Button);
 
-            try
+            piece = PieceMaker.Make(choice, x, y);
+            (sender as Button).Content = choice;
+
+            if ((sender as Button).Content != null) 
             {
-                piece = PieceMaker.Make(choice, x, y);
-                (sender as Button).Background = new SolidColorBrush(Color.FromRgb(216, 191, 216));
-                (sender as Button).Content = choice;
-            }
-            catch
-            {
+                if (piece.Move(x, y))
+                {
+                    (sender as Button).Content = null;
+                    motion = sender as Button;
+                    motion.Content = choice;
+                }
             }
         }
 
@@ -58,7 +62,7 @@ namespace Chess_Wpf
 
             foreach (Button cell in Board.Children)
             {
-                cell.Content = " ";
+                cell.Content = null;
             }
         }
 
