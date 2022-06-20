@@ -24,7 +24,8 @@ namespace Chess_Wpf
         private Piece piece;
         private string choice;
         private Button motion;
-        private bool tPiece;
+        private bool tPiece; 
+
 
         public MainWindow()
         {
@@ -59,8 +60,8 @@ namespace Chess_Wpf
 
         private void Piece_Click(object sender, RoutedEventArgs e)
         {
-            var b = sender as Button;
-            choice = b.Content.ToString();
+            Button name = sender as Button;
+            choice = name.Content.ToString();
         }
 
         private void ButtonClear_Click(object sender, RoutedEventArgs e)
@@ -77,20 +78,20 @@ namespace Chess_Wpf
 
         private void GotFocus(object sender, RoutedEventArgs e)
         {
-            Button tb = e.Source as Button;
-            tb.Background = Brushes.Thistle;
+            Button focus = e.Source as Button;
+            focus.Background = Brushes.Thistle;
         }
 
         private void WhiteLostFocus(object sender, RoutedEventArgs e)
         {
-            Button tb = e.Source as Button;
-            tb.Background = Brushes.White;
+            Button focus = e.Source as Button;
+            focus.Background = Brushes.White;
         }
 
         private void BlackLostFocus(object sender, RoutedEventArgs e)
         {
-            Button tb = e.Source as Button;
-            tb.Background = Brushes.Black;
+            Button focus = e.Source as Button;
+            focus.Background = Brushes.Black;
         }
     }
 }
