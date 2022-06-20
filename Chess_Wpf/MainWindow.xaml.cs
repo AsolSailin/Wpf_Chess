@@ -32,7 +32,7 @@ namespace Chess_Wpf
             InitializeComponent();
         }
 
-        private void btn_Click(object sender, RoutedEventArgs e)
+        private void Cell_Click(object sender, RoutedEventArgs e)
         {
             int x = Grid.GetColumn(sender as Button);
             int y = Grid.GetRow(sender as Button);
@@ -92,6 +92,29 @@ namespace Chess_Wpf
         {
             Button focus = e.Source as Button;
             focus.Background = Brushes.Black;
+        }
+
+        private void Cell_MouseEnter(object sender, MouseEventArgs e)
+        {
+            int x = Grid.GetColumn(sender as Button);
+            int y = Grid.GetRow(sender as Button);
+
+            foreach (Button cell in Board.Children)
+            {
+                if (!tPiece)
+                {
+                    return;
+                }
+                if ((sender as Button).Content != choice)
+                {
+                    (sender as Button).Content = (piece.TestMove(x, y)) ? "YES" : "NO";
+
+                    if (cell.Content != choice)
+                    {
+                        cell.Content = null;
+                    }
+                }
+            }
         }
     }
 }
