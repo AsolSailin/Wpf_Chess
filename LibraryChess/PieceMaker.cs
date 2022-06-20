@@ -11,8 +11,7 @@ namespace LibraryChess
         Queen,
         Bishop,
         Knight,
-        Rook,
-        Pawn
+        Rook
     }
 
     public static class PieceMaker
@@ -32,9 +31,7 @@ namespace LibraryChess
                 { "Knight",  ChessPieces.Knight},
                 { "N",  ChessPieces.Knight},
                 { "Rook",  ChessPieces.Rook},
-                { "R",  ChessPieces.Rook},
-                { "Pawn",  ChessPieces.Pawn},
-                { "P",  ChessPieces.Pawn}
+                { "R",  ChessPieces.Rook}
             };
         }
 
@@ -58,9 +55,6 @@ namespace LibraryChess
                     break;
                 case ChessPieces.Rook:
                     piece = new Rook(x, y);
-                    break;
-                case ChessPieces.Pawn:
-                    piece = new Pawn(x, y);
                     break;
 
                 default:
